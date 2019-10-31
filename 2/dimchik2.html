@@ -1,0 +1,314 @@
+ <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>first form</title>
+      <style>
+       
+       body{
+        max-width: 1000px; 
+        margin: 0 auto;
+        padding: 30px 30px;
+        font-size: 16px;
+
+       }
+       
+       .container {
+        display: block;
+
+      }
+
+      .basic {
+        height: 260px;
+        width: auto;
+        background: white;
+        padding: 20px;
+        line-height: 25px;
+        
+         
+      }
+     
+     .name{
+      margin: 0 20px 0 10px;
+      width: 150px;
+      padding: 5px 6px 5px 6px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+     }
+
+     .skills_hobby {
+       margin: 0 10px;
+       width: 120px;
+       
+     }
+     
+     .options_married {
+      margin: 0 12px;
+      
+
+    }
+     
+    .line-margin-top {
+      margin-top: 25px;
+      
+    } 
+
+     .Your_address {
+        height: 250px;
+        width: auto;
+        background: white;
+        padding: 15px;
+        line-height: 25px;
+        padding: 5px 6px 5px 6px;
+        
+     }
+
+     .For-login {
+
+        height: 250px;
+        width: auto;
+        background: white;
+        padding: 15px;
+        line-height: 25px;
+        padding: 5px 6px 5px 6px;
+     }
+
+     .email {
+        margin: 0 10px;
+        width: 180px;
+        padding: 5px 6px 5px 6px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+     }
+
+     .Sign-in {
+        height: 250px;
+        width: auto;
+        background: white;
+        padding: 15px;
+        line-height: 25px;
+        padding: 5px 6px 5px 6px; 
+
+     }
+
+     .secquestion { 
+        margin: 0 10px;
+       width: auto;
+       
+     }
+
+     .button {
+      height: 40px;
+      width: 100px;
+      background-color: green;
+      font-size: 16px;
+     }
+
+    
+      
+      
+      </style>
+   </head>
+</body>
+<div class="container">
+<h1>Registation form</h1>
+<p>Please fill in this form to create an account.</p>
+<form action="" method="post">
+  <hr>
+
+  <div class="basic">
+    <h3>1. Basic data</h3>
+    <div>      
+          <label for="first-name">First name --></label>
+          <input id="first-name" type="text" required  placeholder="First name*" class="name">
+          
+          <label for="Second name">Second name --></label>
+          <input id="Second name" type="text" placeholder="Second name" class="name">       
+          
+          <label for="Nick name">Nick name --></label>
+          <input id="Nick name" type="text" required placeholder="Nick name*" class="name">  
+        
+    </div>
+    <div class="line-margin-top">
+          <label for="Telephone">Telephone --></label>
+          <input id="Telephone" type="tel" name="tel" required placeholder="Telephone*" class="name">
+          
+          <label for="B-Day">B-Day</label>
+    <input type="date" name="B-Day" class="name">
+
+    </div>
+    <div class="line-margin-top">
+          <label for="Skills">Skills</label>
+          <select id="Skills" name="Skill" class="skills_hobby">
+            <option value="">-----Select-----</option>
+            <option value="Soft skills">Soft skills</option>
+            <option value="Self Control">Self Control</option>
+            <option value="Communication">Communication</option>
+            <option value="Networking">Networking</option>
+            <option value="Creative thinking">Creative thinking</option>
+          </select>
+         
+          <label for="Hobby">Hobby</label>
+            <select id="Hobby" name="Hobby" class="skills_hobby">
+            <option value="">-----Select-----</option>
+            <option value="Marbling">Marbling</option>
+            <option value="Iso Graphics">Iso Graphics</option>
+            <option value="Films">Films</option>
+            <option value="Video games">Video games</option>
+            <option value="Brewing">Brewing</option>
+          </select>
+      </div>
+    <div class="line-margin-top">
+          <span>Marriage* --></span>
+          <input id="Single" type="radio" required  name="option" value="a1" class="options_married">
+          <label for="Single">Single</label>
+
+          <input id="Divorced" type="radio" class="options_married" name="option" value="a2">
+          <label for="Divorced">Divorced</label>
+
+          <input id="Other" type="radio"  class="options_married" name="option" value="a3">
+          <label for="Other">Other</label>
+    </div>
+  </div>
+
+<hr>
+<div class="Your_address">
+        <h3>2. Your address</h3>
+      <div class="line-margin-top">
+            <label for="Country">Country</label>
+            <select id="Country" name="Country" class="skills_hobby">
+                <option value="">-----Select-----</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Florida">Florida</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Maruland">Maruland</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New York">New York</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Virginia">Virginia</option>
+            </select> 
+   
+            <label for="Region">Region</label>
+            <select id="Region" name="Region" class="skills_hobby">
+                  <option value="">-----Select-----</option>
+                  <option value="Northeast">Northeast</option>
+                  <option value="Middle Atlantic">Middle Atlantic</option>
+                  <option value="East North Central">East North Central</option>
+                  <option value="West North Central">West North Central</option> 
+                  <option value="South Atlantic">South Atlantic</option>
+                  <option value="East South Central">East South Central</option>
+                  <option value="West South Central">West South Central</option>
+                  <option value="Mountain">Mountain</option>
+                  <option value="Pacific">Pacific</option>
+            </select>
+     </div>   
+        <div class="line-margin-top">
+             <label for="City">City</label>
+             <select name="City" class="skills_hobby">
+                  <option value="">-----Select-----</option>
+                  <option value="Sitka">Sitka</option>
+                  <option value="Wrangell">Wrangell</option>
+                  <option value="Butte">Butte</option>
+                  <option value="Houston">Houston</option>
+                  <option value="Nashville">Nashville</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Dallas">Dallas</option>
+                  <option value="Louisville">Louisville</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Preston">Preston</option>
+                  <option value="Tulsa">Tulsa</option>
+                  <option value="Norman">Norman</option>
+                  <option value="Denver">Denver</option>
+                  <option value="Raleigh">Raleigh</option>
+                  <option value="Columbia">Columbia</option>
+              </select> 
+
+              <label for="District">District</label>
+              <select id="District" name="District" class="skills_hobby">
+                  <option value="">-----Select-----</option>
+                  <option value="Middle">Middle</option>
+                  <option value="Southern">Southern</option>
+                  <option value="Western">Western</option>
+                  <option value="Central">Central</option> 
+                  <option value="Minnesota">Minnesota</option>
+              </select>
+        </div>    
+          <div class="line-margin-top">             
+              <label for="Street">Street --></label>
+              <input type="text" placeholder="Street" class="name"> 
+                    
+              <label for="Apartment">Apartment --></label>
+              <input id="Apartment" type="text" placeholder="Apartment" class="name"> 
+          </div>
+  </div>
+
+
+        <hr>
+        <div class="For-login">
+           <h3>3. For Login</h3>
+           <div class="line-margin-top">
+                <label for="E-mail">E-mai --></label>
+                <input id="E-mail" type="email" placeholder="e-mail" class="email" class="name"> 
+           </div>
+           <div class="line-margin-top"> 
+              <label for="Password">Password --></label>
+              <input id="Password" type="password" placeholder="password" class="name"> 
+              
+              <label for="Confirm_password">Confirm password --></label>
+              <input id="Confirm_password" type="password" placeholder="confirm password" class="name"> 
+          </div>
+          <div class="line-margin-top"> 
+              <label for="Security_question">Security question</label>
+              <select id="Security_question" name="Security_question" class="secquestion">
+                     <option value="">------------------Select------------------</option>
+                     <option value="What was your first car’s make and model">What was your first car’s make and model</option>  
+                     <option value="What county were you born?">What county were you born?</option>
+                     <option value="What is your oldest cousin’s first name">What is your oldest cousin’s first name</option>
+                     <option value="What is your oldest sibling’s middle name">What is your oldest sibling’s middle name</option>
+                     <option value="When is your anniversary">When is your anniversary</option>
+              </select>
+
+               <label for="Answer">Answer --></label>
+                <input id="Answer" type="text" placeholder="answer" class="name"> 
+          </div>
+        </div>
+
+            <hr>
+        <div class="Sign-in">
+         <h3>4. Sign in</h3>
+              <div class="line-margin-top">   
+                  <span><b>You don't sign in????? come on, do it now!!! --></b></span>
+                      <label>
+                        <input type="radio" name="option" value="a1" class="options_married">Yes
+                      </label>
+                    
+                      <label>
+                        <input type="radio" name="option" value="a2" class="options_married">No
+                      </label>
+                      
+                      <label>
+                        <input type="radio" name="option" value="a3"  class="options_married">I don't care
+                      </label>         
+              </div>
+                 <div class="line-margin-top">
+                        <input id="privacy-police" type="checkbox">
+                        <label for="privacy-police" > By clicking this checkbox, I agree to the above.</label>
+                  </div>
+                  <div class="line-margin-top">
+                      <input type="submit" value="Send" class="button">
+                  </div>
+             </div>
+              <hr>
+              <footer>
+                  Lesson 2 
+              </footer>
+              </div>
+</form>
+</div>
+
+   </body>
+   </html>
